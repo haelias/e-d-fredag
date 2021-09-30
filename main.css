@@ -1,0 +1,112 @@
+
+body {
+    margin:0;
+    font-family:monospace;
+    color:rgb(190, 190, 190);
+}
+
+.container {
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "."; 
+    width: 100%; 
+    height: 50vh; 
+    place-items:center;
+    place-content:center;
+    justify-content: center; 
+    background-color: rgb(24, 24, 24);
+  }
+
+  .memeContainer {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "."; 
+    width: 100%; 
+    height: 50vh; 
+    place-items:center;
+    place-content:center;
+    justify-content: center; 
+    background-color: rgb(34, 34, 34);
+  }
+
+  .lol {
+      place-items:center;
+      justify-content: center;
+      margin:auto;
+      /* height:1000%; */
+      /* background-color: green; */
+      text-align: center;
+  }
+
+  .lol2 {
+    place-items:center;
+    justify-content: center;
+    margin:0;
+    /* background-color: red; */
+    text-align: center;
+  }
+
+ .memeContainer img {
+      max-height: 48vh;
+      width:fit-content;
+      place-items:center;
+      justify-content: center;
+      align-content: center;
+      margin-top:1vh;
+      border:solid white 1px;
+      cursor:pointer;
+  }
+
+  .memeShow {
+      display:none;
+  }
+
+  .visibleAids {
+      display: block;
+      position:absolute;
+      top:0;
+      left:0;
+      width:100vw;
+      height:100vh;
+      background-color:rgb(15, 15, 15);
+      animation: fade 1s;
+  }
+
+  .visibleAids button {
+      position:absolute;
+      top:2vh;
+      right:2vw;
+      border:none;
+      font-size:48px;
+      font-family:monospace;
+      cursor:pointer;
+      background:transparent;
+      color:white;
+  }
+
+  .visibleAids img {
+      display:block;
+      margin:0 auto;
+      margin-top: 2vh;
+  }
+
+  .info {
+      position:absolute;
+      top:8px;
+      left:8px;
+  }
+
+  @keyframes fade {
+      from {
+          opacity:0;
+      }
+      to {
+          opacity:1;
+      }
+  }
