@@ -76,6 +76,7 @@ body {
       height:100vh;
       background-color:rgb(15, 15, 15);
       animation: fade 1s;
+      z-index:100;
   }
 
   .visibleAids button {
@@ -100,6 +101,7 @@ body {
       position:absolute;
       top:8px;
       left:8px;
+      z-index:4;
   }
 
   @keyframes fade {
